@@ -50,6 +50,34 @@
 	border-radius: 15px;
 }
 
+#box {
+	position: fixed;
+	left: 235px;
+	width: 800px;
+	top: 100px;
+	bottom: 80px;
+	background: #8ad5f3ee;
+	border-radius: 15px;
+	font-family: Georgia, serif;
+	border: 1px solid;
+	padding: 10px;
+	box-shadow: 10px 13px;
+	display: none;
+}
+
+#dip {
+	display: none;
+}
+
+#for {
+	position: absolute;
+	height: 25px;
+	width: 25px;
+	/* font-size: 22px; */
+	background-color: rgb(10, 123, 236);
+	color: rgb(7, 10, 14);
+}
+
 #footer {
 	width: 100%;
 	background-color: #047baaee;
@@ -113,6 +141,7 @@ a.button {
 	display: block;
 	font-size: 16px;
 	margin: 10px 10px;
+	font-size: 15px;
 }
 
 a.button:hover {
