@@ -3,8 +3,8 @@
 	<head>
 		<title>Student Request Form</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" type="text/css" href="style.css"/>
-		<script src="functionality.js"></script>
+		<link rel="stylesheet" type="text/css" href="studentreqform.css"/>
+		<script src="studentreqform.js"></script>
 	</head>
 	<body>
 		<div id="sidebar">
@@ -24,20 +24,20 @@
 		<div id="content"></div>
 		<div class="lcup">
 			<div id="box">
-				<div id="for">
-						<label><input type="checkbox" class="remarks" value="Employment" />Employment</label><br />
-						<label><input type="checkbox" class="remarks" value="Personal Copy" />Personal Copy</label><br />
-						<label><input type="checkbox" class="remarks" value="Verification" />Verification</label><br />
-						<label><input type="checkbox" class="remarks" value="Evaluation" />Evaluation</label><br />
-						<label><input type="checkbox" class="remarks" value="Ranking" />Ranking</label><br />
-						<label><input type="checkbox" class"remarks" value="Licensure Examination" />Licensure Examination</label><br />
-						<span class="remark"></span>
-						<label><input type="submit" value="Submit" /></label><br />
-				</div>
-				<div id="dip">
-					<p>Copy: <input type="text" id="un" /></p>
-					<p><input type="submit" id="submit" /></p>
-				</div>
+				<form>
+					<div id="for">
+						<span class="remarks">Remarks:</span><br /><br />
+						<label class="remark"><input type="checkbox" name="remarks" value="Employment" />Employment</label><br />
+						<label><input type="checkbox" name="remarks" value="Personal Copy" />Personal Copy</label><br />
+						<label><input type="checkbox" name="remarks" value="Verification" />Verification</label><br />
+						<label><input type="checkbox" name="remarks" value="Evaluation" />Evaluation</label><br />
+						<label><input type="checkbox" name="remarks" value="Ranking" />Ranking</label><br />
+						<label><input type="checkbox" name="remarks" value="Licensure Examination" />Licensure Examination</label><br />
+						<label><input id="passportsize" type="file" alt="Passport Size with white background" /></label>
+						<label id="submit"><input type="submit" value="Submit" /></label><br />
+					</div>
+				</form>
+			<div id="box2"></div>
 			</div>
 		</div>
 		<div id="footer">
