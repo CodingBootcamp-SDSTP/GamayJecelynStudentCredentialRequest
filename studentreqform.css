@@ -74,6 +74,7 @@
 	border: 1px solid;
 	padding: 10px;
 	box-shadow: 10px 13px;
+	display: none;
 }
 
 #for {
@@ -110,6 +111,10 @@ input[type=submit] {
 	padding: 5px 5px;
 	text-align: center;
 	margin-left: 10px;
+}
+
+#dip {
+	display: none;
 }
 
 #footer {

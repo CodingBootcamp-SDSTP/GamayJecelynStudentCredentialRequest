@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<web-app>
+	<display-name>Student Credential Request</display-name>
+	<description>credential, student, request</description>
+	<servlet>
+		<servlet-name>Student Information</servlet-name>
+		<servlet-class>StudentInformationServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Student Information</servlet-name>
+		<url-pattern>/studentinformation</url-pattern>
+	</servlet-mapping>
+</web-app>
