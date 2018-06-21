@@ -1,14 +1,9 @@
-// import java.io.FileReader;
-// import java.io.FileWriter;
-// import java.io.BufferedReader;
-// import java.io.BufferedWriter;
 import java.util.ArrayList;
 import java.sql.*;
 
 public class StudentDatabase
 {
 	private StudentInformationCollection studInf;
-	// ArrayList<GeneralInformation> gi;
 
 	public StudentDatabase() {
 		studInf = new StudentInformationCollection();
@@ -28,33 +23,6 @@ public class StudentDatabase
 		boolean v = false;
 		try {
 			stmt = conn.createStatement();
-			// rs = stmt.executeQuery("SELECT * FROM students_login;");
-			// while(rs.next()) {
-			// 	String[] str = {
-			// 		rs.getString("stud_id"),
-			// 		rs.getString("password"),
-			// 	};
-			// 	createObject(str);
-			// }
-			// rs = stmt.executeQuery("SELECT * FROM unclaimed_documents;");
-			// while(rs.next()) {
-			// 	String[] str = {
-			// 		rs.getString("stud_id"),
-			// 		rs.getString("req_doc"),
-			// 		rs.getString("date_req"),
-			// 		rs.getString("remarks"),
-			// 	};
-			// 	createObject(str);
-			// }
-			// rs = stmt.executeQuery("SELECT * FROM clearance_checklist;");
-			// while(rs.next()) {
-			// 	String[] str = {
-			// 		rs.getString("stud_id"),
-			// 		rs.getString("department"),
-			// 		rs.getString("remarks"),
-			// 	};
-			// 	createObject(str);
-			// }
 			rs = stmt.executeQuery("SELECT * FROM stud_inf;");
 			while(rs.next()) {
 				String[] str = {
